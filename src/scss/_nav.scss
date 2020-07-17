@@ -1,0 +1,27 @@
+.nav {
+    display: inline-flex;
+
+    &-item {
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &-link {
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        transition: color 0.3s ease 0s;
+
+        &:hover {
+            color: #ca9b5c;
+        }
+
+        &.active,
+        &:active {
+            color: #ca9b5c;
+        }
+    }
+}
