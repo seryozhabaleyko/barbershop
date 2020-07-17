@@ -1,0 +1,33 @@
+.social {
+    > a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 42px;
+        height: 42px;
+        margin-right: 10px;
+
+        color: #fff;
+        background-color: transparent;
+
+        border: 2px solid rgb(202, 155, 92);
+        border-radius: 50%;
+
+        transition: all 0.3s ease-out;
+
+        &:hover {
+            background-color: rgb(202, 155, 92);
+        }
+
+        &:last-child {
+            margin-left: 0;
+        }
+
+        > svg {
+            fill: currentColor;
+            width: 17px;
+            height: 17px;
+        }
+    }
+}
