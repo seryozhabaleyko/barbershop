@@ -10,3 +10,16 @@
         justify-content: space-between;
     }
 }
+
+.logo {
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        color: #ca9b5c;
+        transform: scale(1.1);
+    }
+}
