@@ -78,7 +78,4 @@ exports.cleanImages = cleanImages;
 exports.browsersync = browsersync;
 exports.startWatch = startWatch;
 
-exports.dev = series(
-    clean,
-    parallel(html, css, javascript, browsersync, startWatch),
-);
+exports.dev = series(clean, parallel(html, css, javascript, browsersync, startWatch));
