@@ -1,0 +1,85 @@
+#hamburger {
+    --hamburger-width: 35px;
+    width: var(--hamburger-width, 35px);
+    height: 24px;
+    position: relative;
+    transition-duration: 1s;
+    cursor: pointer;
+
+    display: inline-flex;
+    align-items: center;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    z-index: 1000;
+
+    @media (min-width: 576px) {
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (min-width: 992px) {
+    }
+
+    @media (min-width: 1200px) {
+        display: none;
+    }
+
+    @media (min-width: 1400px) {
+    }
+
+    span {
+        --span-height: 3px;
+        height: var(--span-height, 2px);
+        width: var(--hamburger-width, 35px);
+        background-color: #fff;
+        position: absolute;
+        transition-duration: 0.25s;
+        transition-delay: 0.25s;
+
+        &:before {
+            left: 0;
+            position: absolute;
+            top: -10px;
+            height: var(--span-height, 2px);
+            width: var(--hamburger-width, 35px);
+            background-color: #fff;
+            content: '';
+
+            transition-duration: 0.25s;
+            transition: transform 0.25s, top 0.25s 0.25s;
+        }
+
+        &:after {
+            left: 0;
+            position: absolute;
+            top: 10px;
+            height: var(--span-height, 2px);
+            width: var(--hamburger-width, 35px);
+            background-color: #fff;
+            content: '';
+            transition-duration: 0.25s;
+            transition: transform 0.25s, top 0.25s 0.25s;
+        }
+    }
+
+    .open span {
+        transition-duration: 0.1s;
+        transition-delay: 0.25s;
+        background: transparent;
+
+        &:before {
+            transition: top 0.25s, transform 0.25s 0.25s;
+            top: 0px;
+            transform: rotateZ(-45deg);
+        }
+    }
+}
+
+#hamburger.open span #hamburger.open span:after {
+    transition: top 0.4s, transform 0.25s 0.25s;
+    top: 0px;
+    transform: rotateZ(45deg);
+}
