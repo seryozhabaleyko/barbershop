@@ -3,19 +3,13 @@
  */
 
 function mobile() {
-    const burger = document.getElementById('burger');
-    const navbar = document.querySelector('.mobile');
-    const nav = document.querySelector('.mobile nav');
-    const ul = document.querySelector('.mobile nav ul');
-    burger.addEventListener('click', function () {
-        burger.classList.toggle('active');
-        nav.classList.toggle('open');
-        ul.classList.toggle('show');
+    document.getElementById('burger').addEventListener('click', function () {
+        this.classList.toggle('active');
+        document.querySelector('.mobile nav').classList.toggle('open');
+        document.querySelector('.mobile nav ul').classList.toggle('show');
     });
 }
 
-function ready() {
+document.addEventListener('DOMContentLoaded', () => {
     mobile();
-}
-
-document.addEventListener('DOMContentLoaded', ready, false);
+});
