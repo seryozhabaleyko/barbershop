@@ -10,6 +10,16 @@ function mobile() {
     });
 }
 
+function initializeSwiper() {
+    const mySwiper = new Swiper('.quotes-container', {
+        pagination: {
+            el: '.quotes__pagination',
+            clickable: true,
+        },
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     mobile();
+    initializeSwiper();
 });
