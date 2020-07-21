@@ -31,8 +31,12 @@ ul {
 @import 'navbar';
 @import 'nav';
 @import 'prices';
+@import 'services';
+@import 'team';
 @import 'social';
 @import 'hamburger';
+@import 'reviews';
+@import 'quote';
 
 .header {
     position: relative;
@@ -43,8 +47,6 @@ ul {
 
     display: grid;
     grid-template-rows: auto 1fr;
-
-    /* height: calc(100vh + 115px); */
 
     &::before {
         content: '';
@@ -74,8 +76,22 @@ ul {
 
     &-image {
         width: 100px;
-        //width: 168px;
-        // height: 140px;
+
+        @media (min-width: 576px) {
+        }
+
+        @media (min-width: 768px) {
+        }
+
+        @media (min-width: 992px) {
+        }
+
+        @media (min-width: 1200px) {
+            width: 168px;
+        }
+
+        @media (min-width: 1400px) {
+        }
     }
 
     &-title {
@@ -104,7 +120,7 @@ ul {
     }
 
     &-subtitle {
-        margin: 1rem 0 2rem 0;
+        margin: 2rem 0 2rem 0;
         text-transform: uppercase;
         letter-spacing: -1px;
         font-size: 18px;
@@ -245,67 +261,6 @@ ul {
             line-height: 25px;
             font-weight: 400;
             color: #7a7a79;
-        }
-    }
-}
-
-.ourTeam {
-    padding: 100px 0 200px 0;
-    background-image: url('../images/parallax.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    .heading {
-        text-align: center;
-
-        .title {
-            margin: 0 0 30px 0;
-            color: #c59a57;
-            font-size: 37px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0;
-            font-family: Oswald, sans-serif;
-        }
-    }
-
-    .masters {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
-        gap: 30px;
-
-        padding: 0 30px;
-    }
-
-    .master {
-        &__image {
-            overflow: hidden;
-
-            &:hover {
-                > img {
-                    transform: scale(1.05);
-                }
-            }
-
-            > img {
-                display: block;
-                transition: transform 0.3s ease;
-            }
-        }
-
-        &__content {
-            text-align: center;
-        }
-
-        &__name {
-            color: #fff;
-            margin: 30px 0;
-        }
-
-        > footer {
-            display: flex;
-            justify-content: center;
         }
     }
 }
