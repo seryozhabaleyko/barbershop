@@ -117,154 +117,8 @@
                 </div>
             </section>
 
-            <section class="prices">
-                <div class="container">
-                    <div class="price">
-                        <div class="price__image">
-                            <img src="images/1-min-1.jpg" loading="lazy" alt="price" />
-                        </div>
-                        <div class="price__content">
-                            <h2 class="price__title">Стрижки и Бритьё</h2>
-                            <ul class="services">
-                                <li class="service">
-                                    <h4 class="service__title">
-                                        Мужская стрижка (ножн. и машинка)
-                                    </h4>
-                                    <span class="service__line"></span>
-                                    <span class="service__price">30 руб.</span>
-                                </li>
-                                <li class="service">
-                                    <h4 class="service__title">Моделирование бороды и усов</h4>
-                                    <span class="service__line"></span>
-                                    <span class="service__price">25 руб.</span>
-                                </li>
-                                <li class="service">
-                                    <h4 class="service__title">Стрижка для студентов</h4>
-                                    <span class="service__line"></span>
-                                    <span class="service__price">25 руб.</span>
-                                </li>
-                                <li class="service">
-                                    <h4 class="service__title">Стрижка машинкой</h4>
-                                    <span class="service__line"></span>
-                                    <span class="service__price">25 руб.</span>
-                                </li>
-                                <li class="service">
-                                    <h4 class="service__title">Детская стрижка</h4>
-                                    <span class="service__line"></span>
-                                    <span class="service__price">25 руб.</span>
-                                </li>
-                                <li class="service">
-                                    <h4 class="service__title">Стрижка усов</h4>
-                                    <span class="service__line"></span>
-                                    <span class="service__price">7 руб.</span>
-                                </li>
-                            </ul>
-                            <button class="btn btn-reservation" type="button">Записаться</button>
-                        </div>
-                    </div>
-                    <div class="price">
-                        <div class="price__content">
-                            <h2 class="price__title">Комплексные услуги</h2>
-                            <ul class="services">
-                                <li class="service">
-                                    <h4 class="service__title">Стрижка + моделирование бороды</h4>
-                                    <span class="service__line"></span>
-                                    <span class="service__price">50 руб.</span>
-                                </li>
-                                <li class="service">
-                                    <h4 class="service__title">
-                                        Стрижка + тонирование волос головы
-                                    </h4>
-                                    <span class="service__line"></span>
-                                    <span class="service__price">50 руб.</span>
-                                </li>
-                                <li class="service">
-                                    <h4 class="service__title">Стрижка + тонирование бороды</h4>
-                                    <span class="service__line"></span>
-                                    <span class="service__price">45 руб.</span>
-                                </li>
-                                <li class="service">
-                                    <h4 class="service__title">Стрижка Друг + Друг</h4>
-                                    <span class="service__line"></span>
-                                    <span class="service__price">50 руб.</span>
-                                </li>
-                                <li class="service">
-                                    <h4 class="service__title">Стрижка Отец + Сын</h4>
-                                    <span class="service__line"></span>
-                                    <span class="service__price">50 руб.</span>
-                                </li>
-                            </ul>
-                            <button class="btn btn-reservation" type="button">Записаться</button>
-                        </div>
-                        <div class="price__image">
-                            <img src="images/2-min-1.jpg" loading="lazy" alt="price" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="ourTeam">
-                <header class="heading">
-                    <h2 class="title">Наша команда</h2>
-                </header>
-                <div class="masters">
-                    <article class="master">
-                        <div class="master__image">
-                            <img src="images/masters/1.jpg" />
-                        </div>
-                        <div class="master__content">
-                            <h2 class="master__name">Мария</h2>
-                        </div>
-                        <footer>
-                            <button class="btn btn-reservation" type="button">Записаться</button>
-                        </footer>
-                    </article>
-                    <article class="master">
-                        <div class="master__image">
-                            <img src="images/masters/2.jpg" />
-                        </div>
-                        <div class="master__content">
-                            <h2 class="master__name">Мария</h2>
-                        </div>
-                        <footer>
-                            <button class="btn btn-reservation" type="button">Записаться</button>
-                        </footer>
-                    </article>
-                    <article class="master">
-                        <div class="master__image">
-                            <img src="images/masters/3.jpg" />
-                        </div>
-                        <div class="master__content">
-                            <h2 class="master__name">Мария</h2>
-                        </div>
-                        <footer>
-                            <button class="btn btn-reservation" type="button">Записаться</button>
-                        </footer>
-                    </article>
-                    <article class="master">
-                        <div class="master__image">
-                            <img src="images/masters/4.jpg" />
-                        </div>
-                        <div class="master__content">
-                            <h2 class="master__name">Мария</h2>
-                        </div>
-                        <footer>
-                            <button class="btn btn-reservation" type="button">Записаться</button>
-                        </footer>
-                    </article>
-                    <article class="master">
-                        <div class="master__image">
-                            <img src="images/masters/5.jpg" />
-                        </div>
-                        <div class="master__content">
-                            <h2 class="master__name">Мария</h2>
-                        </div>
-                        <footer>
-                            <button class="btn btn-reservation" type="button">Записаться</button>
-                        </footer>
-                    </article>
-                </div>
-            </section>
+            @@include('./components/prices.html', { title: 'Цены' })
+            @@include('./components/team.html', { title: 'Наша команда' })
 
             <section class="status">
                 <div class="container">
@@ -291,6 +145,8 @@
                     </div>
                 </div>
             </section>
+
+            @@include('./components/reviews.html')
         </main>
 
         @@include('./components/footer.html')
