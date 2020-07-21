@@ -8,6 +8,8 @@ const cleanCSS = require('gulp-clean-css');
 const newer = require('gulp-newer');
 const imagemin = require('gulp-imagemin');
 const del = require('del');
+const rename = require('gulp-rename');
+const fileinclude = require('gulp-file-include');
 
 sass.compiler = require('node-sass');
 
@@ -15,8 +17,16 @@ function clean(cb) {
     cb();
 }
 
+// 'src/*.html'
 function html() {
-    return src('src/*.html').pipe(dest('build'));
+    return src(['src/price.html', 'src/index.html'])
+        .pipe(
+            fileinclude({
+                prefix: '@@',
+                basepath: '@file',
+            }),
+        )
+        .pipe(dest('build'));
 }
 
 function css() {
@@ -34,10 +44,11 @@ function css() {
         .pipe(browserSync.stream());
 }
 
+// .pipe(concat('bundle.min.js'))
 function javascript() {
     return src('src/js/**/*.js')
         .pipe(uglify())
-        .pipe(concat('bundle.min.js'))
+        .pipe(rename({ extname: '.min.js' }))
         .pipe(dest('build/js'))
         .pipe(browserSync.stream());
 }
@@ -64,7 +75,7 @@ function browsersync() {
 }
 
 function startWatch() {
-    watch('src/*.html', html).on('change', browserSync.reload);
+    watch('src/**/*.html', html).on('change', browserSync.reload);
     watch('src/scss/**/*.scss', css);
     watch('src/js/**/*.js', javascript);
     watch('src/images/**/*', images);
