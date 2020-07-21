@@ -1,0 +1,95 @@
+.one {
+    &-grid {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: min(425px);
+        column-gap: 10px;
+
+        margin-top: -100px;
+
+        @media (min-width: 576px) {
+        }
+
+        @media (min-width: 768px) {
+        }
+
+        @media (min-width: 992px) {
+        }
+
+        @media (min-width: 1200px) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: min(425px);
+        }
+
+        @media (min-width: 1400px) {
+        }
+
+        > div {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            mix-blend-mode: luminosity;
+
+            &::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                // content: '';
+                background-color: #000;
+                opacity: 0.7;
+            }
+
+            &:nth-child(1) {
+                background-color: #68645e;
+                background-image: url('../images/one/1.jpg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+            }
+
+            &:nth-child(2) {
+                background-color: #f3f1ed;
+                background-image: url('../images/one/2.jpg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+
+                > h2 {
+                    color: #212121;
+                }
+            }
+
+            &:nth-child(3) {
+                background-color: #43403b;
+                background-image: url('../images/one/3.jpg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+
+                > h2 {
+                    margin: 0 0 1rem 0;
+                    color: #ca9b5c;
+                }
+
+                > ul {
+                    margin: 0 0 1rem 0;
+
+                    > li {
+                        margin-bottom: 5px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
