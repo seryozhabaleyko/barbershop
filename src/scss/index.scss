@@ -37,6 +37,7 @@ ul {
 @import 'hamburger';
 @import 'reviews';
 @import 'quote';
+@import 'one';
 
 .header {
     position: relative;
@@ -140,74 +141,6 @@ ul {
         }
 
         @media (min-width: 1400px) {
-        }
-    }
-}
-
-.one {
-    &-grid {
-        position: relative;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: min(425px);
-
-        margin-top: -100px;
-
-        @media (min-width: 576px) {
-        }
-
-        @media (min-width: 768px) {
-        }
-
-        @media (min-width: 992px) {
-        }
-
-        @media (min-width: 1200px) {
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: min(425px);
-        }
-
-        @media (min-width: 1400px) {
-        }
-
-        > div {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            &:nth-child(1) {
-                background-color: #68645e;
-            }
-
-            &:nth-child(2) {
-                background-color: #f3f1ed;
-
-                > h2 {
-                    color: #212121;
-                }
-            }
-
-            &:nth-child(3) {
-                background-color: #43403b;
-
-                > h2 {
-                    margin: 0 0 1rem 0;
-                    color: #ca9b5c;
-                }
-
-                > ul {
-                    margin: 0 0 1rem 0;
-
-                    > li {
-                        margin-bottom: 5px;
-
-                        &:last-child {
-                            margin-bottom: 0;
-                        }
-                    }
-                }
-            }
         }
     }
 }
