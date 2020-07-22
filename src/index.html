@@ -5,53 +5,29 @@
         @@include('./components/header.html')
 
         <main class="main">
-            <!-- one -->
+            <!-- one section start -->
+            @@include('./modules/one.html')
+            <!-- one section end -->
 
-            @@include('./components/one.html')
+            <!-- feature section start -->
+            @@include('./modules/features.html')
+            <!-- feature section end -->
 
-            <!-- two -->
+            <!-- prices section start -->
+            @@include('./modules/prices.html')
+            <!-- prices section end -->
 
-            @@include('./components/two.html')
+            <!-- our team section start -->
+            @@include('./modules/team.html', { "title": "Наша команда" })
+            <!-- our team section end -->
 
-            <!-- price -->
+            <!-- status section start -->
+            @@include('modules/status.html')
+            <!-- status section end -->
 
-            @@include('./components/prices.html')
-
-            <!-- team -->
-
-            @@include('./components/team.html', { title: 'Наша команда' })
-
-            <!-- status -->
-
-            <section class="status">
-                <div class="container">
-                    <div class="status__grid">
-                        <div>
-                            <h2>5</h2>
-                            <p>Профессиональных мастеров</p>
-                        </div>
-                        <div>
-                            <h2>99</h2>
-                            <p>
-                                % положительных<br />
-                                отзывов
-                            </p>
-                        </div>
-                        <div>
-                            <h2>200</h2>
-                            <p>Более 200 клиентов по рекомендациям</p>
-                        </div>
-                        <div>
-                            <h2>700</h2>
-                            <p>Постоянных клиентов</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- reviews -->
-
-            @@include('./components/reviews.html')
+            <!-- testimonial section start -->
+            @@include('./modules/testimonial.html')
+            <!-- testimonial section end -->
         </main>
 
         @@include('./components/footer.html')
