@@ -19,6 +19,17 @@
         font-family: Oswald, sans-serif;
     }
 
+    &__separator {
+        text-align: center;
+
+        > img {
+            max-width: 100%;
+            width: 266px;
+            height: auto;
+            margin: 12px 0 20px;
+        }
+    }
+
     .masters {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
