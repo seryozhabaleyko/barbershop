@@ -17,6 +17,7 @@
         &__price {
             margin: 0;
             font-size: 13px;
+            letter-spacing: -0.5px;
 
             @media (min-width: 576px) {
             }
@@ -40,7 +41,11 @@
             flex-grow: 1;
             height: 9px;
             margin: 0 5px;
-            border-bottom: 1px dotted #7a7a79;
+            // border-bottom: 1px dotted #7a7a79;
+            background-image: radial-gradient(circle closest-side, #777777 99%, transparent 100%);
+            background-position: 50% 70%;
+            background-size: 4px 2px;
+            background-repeat: repeat-x;
         }
 
         &__price {
