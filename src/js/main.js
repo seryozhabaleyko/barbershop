@@ -23,3 +23,5 @@ document.addEventListener('DOMContentLoaded', () => {
     mobile();
     initializeSwiper();
 });
+
+AOS.init();
