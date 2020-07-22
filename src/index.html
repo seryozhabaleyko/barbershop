@@ -5,45 +5,23 @@
         @@include('./components/header.html')
 
         <main class="main">
+            <!-- one -->
+
             @@include('./components/one.html')
 
-            <section class="two">
-                <div class="container">
-                    <div class="two-cards">
-                        <div class="two-card">
-                            <img src="images/1.png" />
-                            <div class="content">
-                                <h5>WI-FI</h5>
-                                <p>У нас высокоскоростной бесплатный интернет</p>
-                            </div>
-                        </div>
-                        <div class="two-card">
-                            <img src="images/2.png" />
-                            <div class="content">
-                                <h5>THE WAITING AREA</h5>
-                                <p>Удобная зона ожидания на 2-х этажах</p>
-                            </div>
-                        </div>
-                        <div class="two-card">
-                            <img src="images/3.png" />
-                            <div class="content">
-                                <h5>КОФЕ И ЧАЙ</h5>
-                                <p>Предложим вам чай или кофе во время ожидания</p>
-                            </div>
-                        </div>
-                        <div class="two-card">
-                            <img src="images/4.png" />
-                            <div class="content">
-                                <h5>КАЧЕСТВО</h5>
-                                <p>Команда квалифицированных мастеров</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <!-- two -->
 
-            @@include('./components/prices.html', { title: 'Цены' })
+            @@include('./components/two.html')
+
+            <!-- price -->
+
+            @@include('./components/prices.html')
+
+            <!-- team -->
+
             @@include('./components/team.html', { title: 'Наша команда' })
+
+            <!-- status -->
 
             <section class="status">
                 <div class="container">
@@ -71,6 +49,8 @@
                 </div>
             </section>
 
+            <!-- reviews -->
+
             @@include('./components/reviews.html')
         </main>
 
@@ -78,6 +58,7 @@
 
         <script src="js/countUp.min.js"></script>
         <script src="js/swiper.min.js"></script>
+        <script src="js/aos.min.js"></script>
         <script src="js/main.min.js"></script>
     </body>
 </html>
