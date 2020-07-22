@@ -16,8 +16,8 @@ a {
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
 }
 
 ul {
@@ -38,6 +38,8 @@ ul {
 @import 'reviews';
 @import 'quote';
 @import 'one';
+@import 'two';
+@import 'aos';
 
 .header {
     position: relative;
@@ -145,59 +147,6 @@ ul {
     }
 }
 
-.two {
-    padding: 100px 0;
-
-    &-cards {
-        display: grid;
-        grid-template-columns: 1fr;
-        column-gap: 30px;
-
-        @media (min-width: 576px) {
-        }
-
-        @media (min-width: 768px) {
-        }
-
-        @media (min-width: 992px) {
-        }
-
-        @media (min-width: 1200px) {
-            grid-template-columns: repeat(4, 1fr);
-        }
-
-        @media (min-width: 1400px) {
-        }
-    }
-
-    &-card {
-        text-align: center;
-
-        img {
-            object-fit: cover;
-            width: 162px;
-            height: 162px;
-        }
-
-        h5 {
-            margin: 25px 0 15px 0;
-            font-size: 18px;
-            line-height: 28px;
-            font-weight: 600;
-            font-family: Oswald, sans-serif;
-            color: #999;
-            text-transform: uppercase;
-        }
-
-        p {
-            font-size: 16px;
-            line-height: 25px;
-            font-weight: 400;
-            color: #7a7a79;
-        }
-    }
-}
-
 .status {
     background-color: #f3f1ed;
 
@@ -231,7 +180,22 @@ ul {
 
         > div {
             text-align: center;
-            padding: 20px 40px;
+
+            @media (min-width: 576px) {
+            }
+
+            @media (min-width: 768px) {
+            }
+
+            @media (min-width: 992px) {
+            }
+
+            @media (min-width: 1200px) {
+                padding: 20px 40px;
+            }
+
+            @media (min-width: 1400px) {
+            }
 
             > h2 {
                 margin: 0;
