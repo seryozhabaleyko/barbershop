@@ -1,0 +1,12 @@
+.quote {
+    margin: 0;
+    text-align: center;
+
+    &__message {
+        position: relative;
+    }
+
+    &__caption {
+        position: relative;
+    }
+}
