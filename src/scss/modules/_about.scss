@@ -1,0 +1,76 @@
+.about {
+    padding: 100px 0;
+
+    // background: url('../../images/XXXL.jpg') center/cover no-repeat #000;
+    // linear-gradient(to bottom, rgba(0,47,75,0.5) 0%,rgba(220, 66, 37, 0.5) 100%);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),
+        url('../../images/XXXL.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__heading {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        margin: 0 0 30px 0;
+        color: #fff;
+        text-shadow: 1px 1px 1px #000;
+        font-family: Oswald, sans-serif;
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        &-left {
+            position: relative;
+        }
+
+        &-image {
+            position: absolute;
+            left: 50%;
+            bottom: -100px;
+            transform: translateX(-50%);
+            display: block;
+            max-width: 290px;
+            height: auto;
+        }
+
+        &-right {
+            position: relative;
+        }
+    }
+}
+
+.advantage {
+    max-width: 300px;
+
+    /* Модификатор */
+    &_text-align {
+        &_right {
+            text-align: right;
+        }
+    }
+
+    &:last-child {
+        .advantage__description {
+            margin-bottom: 0;
+        }
+    }
+
+    &__title {
+        margin: 0 0 10px 0;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    &__description {
+        margin: 0 0 45px 0;
+        font-size: 16px;
+        color: #ffffffcc;
+    }
+}
