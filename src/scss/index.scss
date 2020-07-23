@@ -16,8 +16,8 @@ a {
 }
 
 img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 ul {
@@ -35,10 +35,13 @@ ul {
 @import 'team';
 @import 'social';
 @import 'hamburger';
-@import 'reviews';
+@import 'modules/testimonial';
 @import 'components/quote';
 @import 'one';
-@import 'modules/features';
+@import 'modules/philosophy';
+@import 'components/features';
+@import 'components/apartments';
+@import 'modules/about';
 @import 'aos';
 
 .header {
