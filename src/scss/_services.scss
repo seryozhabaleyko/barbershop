@@ -3,9 +3,9 @@
     margin: 0 0 34px 0;
 
     .service {
-        display: flex;
+        /* display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-between; */
 
         margin: 0 0 15px 0;
 
@@ -18,6 +18,7 @@
             margin: 0;
             font-size: 13px;
             letter-spacing: -0.5px;
+            font-family: Oswald, sans-serif;
 
             @media (min-width: 576px) {
             }
@@ -37,7 +38,16 @@
             }
         }
 
+        &__title {
+            display: table-cell;
+            width: 1%;
+            white-space: nowrap;
+            color: #000;
+        }
+
         &__line {
+            display: table-cell;
+            width: 95%;
             flex-grow: 1;
             height: 9px;
             margin: 0 5px;
@@ -49,7 +59,18 @@
         }
 
         &__price {
+            display: table-cell;
+            width: 1%;
             white-space: nowrap;
+            color: #bf9456;
+            font-weight: 700;
+            font-family: Oswald, sans-serif;
+        }
+
+        &__description {
+            font-size: 13px;
+            font-family: Oswald, sans-serif;
+            color: rgba($color: #000000, $alpha: 0.8);
         }
     }
 }
