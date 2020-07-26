@@ -11,10 +11,17 @@ function mobile() {
 }
 
 function initializeSwiper() {
-    const mySwiper = new Swiper('.quotes-container', {
+    const mySwiper = new Swiper('.testimonial__container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
         pagination: {
-            el: '.quotes__pagination',
+            el: '.testimonial__pagination',
             clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
     });
 }
