@@ -17,7 +17,6 @@ function clean(cb) {
     cb();
 }
 
-// 'src/*.html'
 function html() {
     return src(['src/price.html', 'src/index.html'])
         .pipe(
@@ -44,7 +43,6 @@ function css() {
         .pipe(browserSync.stream());
 }
 
-// .pipe(concat('bundle.min.js'))
 function javascript() {
     return src('src/js/**/*.js')
         .pipe(uglify())
@@ -58,6 +56,10 @@ function images() {
         .pipe(newer('build/images'))
         .pipe(imagemin())
         .pipe(dest('build/images'));
+}
+
+function fonts() {
+    return src('src/fonts/**/*').pipe(dest('build/fonts'));
 }
 
 function cleanImages() {
@@ -86,6 +88,7 @@ exports.css = css;
 exports.javascript = javascript;
 exports.images = images;
 exports.cleanImages = cleanImages;
+exports.fonts = fonts;
 exports.browsersync = browsersync;
 exports.startWatch = startWatch;
 
