@@ -50,6 +50,7 @@
     color: #fff;
     transition: all 0.3s ease 0s;
     z-index: 1000;
+    font-family: Rex, sans-serif;
 
     &:hover {
         color: #ca9b5c;
@@ -66,8 +67,6 @@
     }
 
     @media (min-width: 1200px) {
-        font-size: 16px;
-        font-weight: 500;
     }
 
     @media (min-width: 1400px) {
