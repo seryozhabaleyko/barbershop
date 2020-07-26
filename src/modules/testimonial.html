@@ -1,27 +1,26 @@
 <section class="testimonial">
     <div class="container">
         <header class="testimonial__heading">
-            <h1 class="testimonial__title">Вот что о нас говорят клиенты</h1>
-            <object class="separator" data="../images/separator.svg"></object>
+            <h1 class="testimonial__title">Отзывы</h1>
+            <p class="testimonial__description">
+                Наши барберы способны оказать весь спектр профессиональных услуг по созданию
+                неповторимого стиля для каждого мужчины. Не верите - прочитайте в отзывах.
+            </p>
         </header>
-        <div class="quotes-container swiper-container">
-            <div class="quotes-wrapper swiper-wrapper">
-                @@loop('../components/quote.html', [ { "caption": "Владимир Тихонов", "message":
-                "Один из лучших барбершопов в Минске. Прекрасная атмосфера, приемлемый ценник,
-                возможность записи через интернет, возможность приобрести средства по уходу за
-                волосами и бородой. Особенно рекомендую мастера Антона." }, { "caption": "Антон
-                Дубежинский", "message": "Сегодня мне посчастливилось побывать в Barbershop
-                VALHALLA. Интерьер очень милый, чем то похож на гримерку для звёзд, для посетителей
-                имеется чай, кофе и конфетки. Что касается персонала, то это очень вежливые,
-                дружелюбные, а самое главное общительные люди. Во время работы мастера, в отличии от
-                других мест, получаешь некое удовлетворение. Вкратце говоря, если вы хотите
-                выглядеть опрятно или приукрасить свой образ, то это место идеально подходит для
-                вас." }, { "caption": "Павел Копать", "message": "Отличный барбершоп, высокий
-                уровень обслуживания и комфортная атмосфера. Хотел бы отметить барбера Дмитрия.
-                Веселый и приятный человек, ответственно подходит к своей работе, стрижет очень
-                аккуратно и качественно. Результатом стрижки полностью доволен." } ])
+        <div class="testimonial__container swiper-container">
+            <div class="testimonial__wrapper swiper-wrapper">
+                <div class="testimonial__slide swiper-slide" style="height: 200px;">
+                    <figure class="quote">
+                        <blockquote class="quote__message">@@message</blockquote>
+                        <figcaption class="quote__caption">@@caption</figcaption>
+                    </figure>
+                </div>
+                <div class="testimonial__slide swiper-slide">2</div>
+                <div class="testimonial__slide swiper-slide">3</div>
             </div>
-            <div class="quotes__pagination"></div>
+            <div class="testimonial__pagination"></div>
+            <div class="testimonial__button-next swiper-button-next"></div>
+            <div class="testimonial__button-prev swiper-button-prev"></div>
         </div>
     </div>
 </section>
