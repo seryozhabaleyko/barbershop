@@ -1,5 +1,4 @@
 .nav {
-    // display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -64,6 +63,8 @@
     &-link {
         font-size: 25px;
         font-weight: 500;
+        font-family: 'Rex', sans-serif;
+        text-transform: uppercase;
         color: #fff;
         transition: color 0.3s ease 0s;
 
@@ -86,7 +87,7 @@
         }
 
         @media (min-width: 1200px) {
-            font-size: 16px;
+            font-size: 20px;
         }
 
         @media (min-width: 1400px) {
