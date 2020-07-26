@@ -1,9 +1,8 @@
 .quote {
+    height: 100%;
     margin: 0;
     text-align: center;
-    padding: 40px 40px 90px;
-    margin: 55px 50px 45px;
-    box-shadow: 0 7px 20px rgba(106, 106, 106, 0.2);
+    padding: 40px;
 
     &__message {
         position: relative;
