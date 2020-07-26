@@ -1,0 +1,11 @@
+@mixin font($fname, $fstyle, $fweight, $furl) {
+    @font-face {
+        font-family: $fname;
+        font-style: $fstyle;
+        font-weight: $fweight;
+        // font-display: swap; // Uncomment to initially display system fonts
+        src: local($fname), url($furl) format('woff2');
+    }
+}
+
+@include font('Rex', normal, 700, '../../fonts/Rex-Bold.woff2');
